@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Login Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Login Page</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Ini buat tampilan Card 1 -->
+  <ion-card>
+    <img alt="buat login" src="../../assets/image/1328869.jpeg" />
+    <ion-card-header>
+      <ion-col>
+        <div class="ion-text-center">
+          <ion-card-title class="ion-justify-content-center"
+            >Isi Biodata</ion-card-title
+          >
+        </div>
+      </ion-col>
+    </ion-card-header>
+
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more,
+      nothing less.
+    </ion-card-content>
+  </ion-card>
+  <!-- Ini End Tampilan card 1 -->
+
+  <!-- Button back -->
+  <div class="container">
+    <!-- <p>Klik <a [routerLink]="['/home']">Masuk</a>Menuju Home</p> -->
+    <ion-button shape="round" [routerLink]="['/home']">Menuju Home</ion-button>
+  </div>
+  <!-- End Button Back -->
+</ion-content>

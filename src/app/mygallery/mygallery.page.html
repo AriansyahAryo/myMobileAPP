@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>mygallery</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">mygallery</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <!-- Ini buat isi Gallery -->
+  <ion-accordion-group>
+    <ion-accordion value="first">
+      <ion-item slot="header" color="light">
+        <ion-label>Focalors</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <img alt="buat login" src="../../assets/image/download.jpg" />
+      </div>
+    </ion-accordion>
+    <ion-accordion value="second">
+      <ion-item slot="header" color="light">
+        <ion-label>Klee</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <img
+          alt="buat login"
+          src="../../assets/image/desktop-wallpaper-genshin-impact-klee-klee.jpg"
+        />
+      </div>
+    </ion-accordion>
+    <ion-accordion value="third">
+      <ion-item slot="header" color="light">
+        <ion-label>Hutao</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <img alt="buat login" src="../../assets/image/1308221.jpg" />
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+  <!-- End Isi Gallery -->
+
+  <!-- Buat Button Navigasi -->
+  <div id="container">
+    <ion-button shape="round" [routerLink]="['/login']"
+      >Menuju Login</ion-button
+    >
+    <ion-button shape="round" [routerLink]="['/home']">Menuju Home</ion-button>
+  </div>
+  <!-- END buat BUtton Navigasi -->
+</ion-content>
