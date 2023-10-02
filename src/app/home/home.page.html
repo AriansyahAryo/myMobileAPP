@@ -12,11 +12,29 @@
   </ion-header>
 
   <div id="container">
-    <ion-button shape="round" [routerLink]="['/login']"
-      >Menuju Login</ion-button
-    >
-    <ion-button shape="round" [routerLink]="['/mygallery']"
-      >Menuju Gallery</ion-button
-    >
+    <ion-card>
+      <!-- <div ng-switch==="userRole">
+
+      </div> -->
+      <div ng-if="userRole==='admin'">
+        <ion-img src="../../assets/image/1308221.jpg"> </ion-img>
+      </div>
+      <div ng-if="userRole==='superadmin'">
+        <ion-img src="../../assets/image/download.jpg"> </ion-img>
+      </div>
+
+      <ion-card-header>
+        <ion-card-title>Card Title</ion-card-title>
+        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content> Selamat datang {{userRole}} </ion-card-content>
+      <ion-button shape="round" [routerLink]="['/profil']"
+        >Menuju Profile</ion-button
+      >
+      <ion-button shape="round" [routerLink]="['/mygallery']"
+        >Menuju Gallery</ion-button
+      >
+    </ion-card>
   </div>
 </ion-content>

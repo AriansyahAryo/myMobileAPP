@@ -11,30 +11,32 @@
     </ion-toolbar>
   </ion-header>
 
-  <!-- Ini buat tampilan Card 1 -->
-  <ion-card>
-    <img alt="buat login" src="../../assets/image/1328869.jpeg" />
-    <ion-card-header>
-      <ion-col>
-        <div class="ion-text-center">
-          <ion-card-title class="ion-justify-content-center"
-            >Isi Biodata</ion-card-title
-          >
-        </div>
-      </ion-col>
-    </ion-card-header>
-
-    <ion-card-content>
-      Here's a small text description for the card content. Nothing more,
-      nothing less.
-    </ion-card-content>
-  </ion-card>
-  <!-- Ini End Tampilan card 1 -->
-
   <!-- Button back -->
   <div class="container">
+    <h1><strong>Login</strong></h1>
+    <ion-input
+      type="text"
+      [(ngModel)]="username"
+      label="Username"
+      labelPlacement="floating"
+    />
+    <br />
+    <ion-input
+      label="Password"
+      labelPlacement="floating"
+      type="password"
+      [(ngModel)]="password"
+    />
+    <ion-button
+      (click)="checkLoginAuth
+        ()"
+      >Login</ion-button
+    >
+    <!-- <ion-button shape="round" [routerLink]="['/login']">Menuju Login</ion-button> -->
+    <!-- <ion-button shape="round" [routerLink]="['/mygallery']"
+        >Menuju Gallery</ion-button
+      > -->
     <!-- <p>Klik <a [routerLink]="['/home']">Masuk</a>Menuju Home</p> -->
-    <ion-button shape="round" [routerLink]="['/home']">Menuju Home</ion-button>
   </div>
   <!-- End Button Back -->
 </ion-content>
