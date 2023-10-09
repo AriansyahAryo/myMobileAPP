@@ -9,7 +9,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'grid',
+    redirectTo: 'listuser',
     pathMatch: 'full',
   },
   {
@@ -39,7 +39,8 @@ const routes: Routes = [
   },
   {
     path: 'listuser',
-    loadChildren: () => import('./listuser/listuser.module').then( m => m.ListuserPageModule)
+    loadChildren: () =>
+      import('./listuser/listuser.module').then((m) => m.ListuserPageModule),
   },
 ];
 
