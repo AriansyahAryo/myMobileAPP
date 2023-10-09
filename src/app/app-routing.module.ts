@@ -9,7 +9,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'grid',
     pathMatch: 'full',
   },
   {
@@ -19,11 +19,27 @@ const routes: Routes = [
   },
   {
     path: 'mygallery',
-    loadChildren: () => import('./mygallery/mygallery.module').then( m => m.MygalleryPageModule)
+    loadChildren: () =>
+      import('./mygallery/mygallery.module').then((m) => m.MygalleryPageModule),
   },
   {
     path: 'profil',
-    loadChildren: () => import('./profil/profil.module').then( m => m.ProfilPageModule)
+    loadChildren: () =>
+      import('./profil/profil.module').then((m) => m.ProfilPageModule),
+  },
+  {
+    path: 'toast',
+    loadChildren: () =>
+      import('./toast/toast.module').then((m) => m.ToastPageModule),
+  },
+  {
+    path: 'grid',
+    loadChildren: () =>
+      import('./grid/grid.module').then((m) => m.GridPageModule),
+  },
+  {
+    path: 'listuser',
+    loadChildren: () => import('./listuser/listuser.module').then( m => m.ListuserPageModule)
   },
 ];
 
