@@ -42,6 +42,10 @@ const routes: Routes = [
     loadChildren: () =>
       import('./listuser/listuser.module').then((m) => m.ListuserPageModule),
   },
+  {
+    path: 'listbaru',
+    loadChildren: () => import('./listbaru/listbaru.module').then( m => m.ListbaruPageModule)
+  },
 ];
 
 @NgModule({
