@@ -46,6 +46,10 @@ const routes: Routes = [
     path: 'listbaru',
     loadChildren: () => import('./listbaru/listbaru.module').then( m => m.ListbaruPageModule)
   },
+  {
+    path: 'testarray',
+    loadChildren: () => import('./testarray/testarray.module').then( m => m.TestarrayPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>testarray</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">testarray</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>MyWaifu</ion-label>
+      <ion-button>See All</ion-button>
+    </ion-list-header>
+    <ion-item *ngFor="let mywaifu of Waifuku">
+      <ion-label> {{mywaifu}} </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Game</ion-label>
+      <ion-button>See All</ion-button>
+    </ion-list-header>
+    <ion-item *ngFor="let mygame of Gameku">
+      <ion-label> {{mygame}} </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
